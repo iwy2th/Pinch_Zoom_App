@@ -40,7 +40,7 @@ struct ContentView: View {
           .onTapGesture(count: 2) {
             if imageScale == 1 {
               withAnimation(.spring()) {
-                imageScale = 3
+                imageScale = 5
               }
             } else {
              resetImageState()
@@ -68,11 +68,56 @@ struct ContentView: View {
           isAnimating = true
         }
       }
+      // MARK: - INFO PANEL
       .overlay(alignment:. top) {
         InfoPanelView(scale: imageScale, offset: imageOffset)
           .padding(.horizontal)
           .padding(.top, 30)
       }
+      // MARK: - CONTROLS PANEL
+      .overlay (
+        Group {
+          HStack {
+            // SCALE DOWN
+            Button {
+              withAnimation(.spring()) {
+                if imageScale > 1 {
+                  imageScale -= 1
+                  if imageScale <= 1 {
+                    resetImageState()
+                  }
+                }
+              }
+            } label: {
+               ControlImageView(icon: "minus.magnifyingglass")
+            }
+            // RESET
+            Button {
+              resetImageState()
+            } label: {
+               ControlImageView(icon: "arrow.up.left.and.down.right.magnifyingglass")
+            }
+            // SACLE UP
+            Button {
+              withAnimation(.spring()) {
+                if imageScale < 5 {
+                  imageScale += 1
+                  if imageScale > 5 {
+                   imageScale = 5
+                  }
+                }
+              }
+            } label: {
+               ControlImageView(icon: "plus.magnifyingglass")
+            }
+          } //: CONTROLS
+          .padding(EdgeInsets(top: 12, leading: 20, bottom: 12, trailing: 20))
+          .background(.ultraThickMaterial)
+          .cornerRadius(12)
+          .opacity(isAnimating ? 1 : 0)
+        }
+          .padding(.bottom, 30) , alignment: .bottom
+      )
     } //: NAVIGATION
     .navigationViewStyle(.stack)
   }
@@ -81,5 +126,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
+      .preferredColorScheme(.dark)
   }
 }

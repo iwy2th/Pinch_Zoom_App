@@ -12,6 +12,7 @@
 		724E4E0E2A29936B00B0DB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724E4E0D2A29936B00B0DB2D /* Assets.xcassets */; };
 		724E4E112A29936B00B0DB2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724E4E102A29936B00B0DB2D /* Preview Assets.xcassets */; };
 		72A4898B2A29C3A600CADCF9 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4898A2A29C3A600CADCF9 /* InfoPanelView.swift */; };
+		72A4898D2A29D1EE00CADCF9 /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4898C2A29D1EE00CADCF9 /* ControlImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		724E4E0D2A29936B00B0DB2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724E4E102A29936B00B0DB2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		72A4898A2A29C3A600CADCF9 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		72A4898C2A29D1EE00CADCF9 /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +57,9 @@
 			children = (
 				724E4E1A2A29953900B0DB2D /* Data */,
 				724E4E192A29952500B0DB2D /* Model */,
+				724E4E172A2994FD00B0DB2D /* Screen */,
 				724E4E182A29951400B0DB2D /* View */,
 				724E4E092A29936A00B0DB2D /* PinchApp.swift */,
-				724E4E172A2994FD00B0DB2D /* Screen */,
 				724E4E0D2A29936B00B0DB2D /* Assets.xcassets */,
 				724E4E0F2A29936B00B0DB2D /* Preview Content */,
 			);
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				72A4898A2A29C3A600CADCF9 /* InfoPanelView.swift */,
+				72A4898C2A29D1EE00CADCF9 /* ControlImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A4898D2A29D1EE00CADCF9 /* ControlImageView.swift in Sources */,
 				724E4E0C2A29936A00B0DB2D /* ContentView.swift in Sources */,
 				724E4E0A2A29936A00B0DB2D /* PinchApp.swift in Sources */,
 				72A4898B2A29C3A600CADCF9 /* InfoPanelView.swift in Sources */,
