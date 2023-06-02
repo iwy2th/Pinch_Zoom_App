@@ -97,7 +97,7 @@ struct ContentView: View {
       .overlay (
         Group {
           HStack {
-            // SCALE DOWN
+            //: SCALE DOWN
             Button {
               withAnimation(.spring()) {
                 if imageScale > 1 {
