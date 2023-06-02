@@ -8,3 +8,4 @@ Pinch và Zoom với SwiftUI
   </video> -->
 </div>
 
+https://github.com/iwy2th/Pinch_Zoom_App/assets/92966362/bcb10732-dc3b-4bf4-8fab-8db2081906cb
