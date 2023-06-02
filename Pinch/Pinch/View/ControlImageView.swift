@@ -11,7 +11,7 @@ struct ControlImageView: View {
   let icon: String
     var body: some View {
       Image(systemName: icon)
-        .font(.system(size: 36))
+        .font(.system(size: 25))
     }
 }
 
@@ -21,5 +21,6 @@ struct ControlImageView_Previews: PreviewProvider {
         .preferredColorScheme(.dark)
         .previewLayout(.sizeThatFits)
         .padding()
+
     }
 }
